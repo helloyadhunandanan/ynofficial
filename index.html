@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stunning Portfolio - Brilliant UI/UX</title>
+
+  <!-- Google Fonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo" tabindex="0">Yadhu Nandanan</div>
+      <nav>
+        <a href="#hero" tabindex="0">Home</a>
+        <a href="#about" tabindex="0">About</a>
+        <a href="#skills" tabindex="0">Skills</a>
+        <a href="#projects" tabindex="0">Projects</a>
+        <a href="#blog" tabindex="0">Blog</a>
+        <a href="#upcoming-projects" tabindex="0">Upcoming Projects</a>
+        <a href="#contact" tabindex="0">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" tabindex="0">
+    <h1>Welcome to YN's Space</h1>
+    <p></p>
+    <button class="btn-primary" type="button">Explore My Work</button>
+  </section>
+
+  <section id="about" tabindex="0">
+    <div class="container inner">
+      <div class="text">
+        <h2>About Me</h2>
+        <p>I am a Computer Science Engineering student deeply passionate about Bharath's infrastructural development.
+           As a keen observer, I analyze and blog about Bharath's transformative infrastructure projects.
+           I study at [Your College Name], preparing myself to contribute innovative solutions for our nation's growth.</p>
+      </div>
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5bc2c9dc-9846-4ebe-b2a4-892c9a5a6497.png" alt="Professional portrait of a web designer and engineer" />
+    </div>
+  </section>
+
+  <section id="skills" tabindex="0">
+    <div class="container">
+      <h2>My Skills</h2>
+      <ul class="skills-list" aria-label="List of skills">
+        <li>HTML / CSS / JavaScript</li>
+        <li>React & Vue.js</li>
+        <li>Responsive & Mobile-First Design</li>
+        <li>Animation with CSS & GSAP</li>
+        <li>Accessibility & WCAG 2.1</li>
+        <li>UI/UX Design Principles</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" tabindex="0">
+    <div class="container">
+      <h2>Recent Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/890aac9a-1648-48a7-b443-81a837698e6c.png" alt="Screenshot of Project 1 web application" />
+          <h3>Project One</h3>
+          <p>A modern dashboard with real-time data visualizations and interactive charts.</p>
+          <a href="#" class="btn-secondary" target="_blank" rel="noopener noreferrer">View Project</a>
+        </article>
+        <article class="project-card" tabindex="0">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/99766dfd-b1fb-431c-a068-734920eeb945.png" alt="Screenshot of Project 2 mobile app" />
+          <h3>Project Two</h3>
+          <p>A responsive portfolio site with smooth animations and custom user interactions.</p>
+          <a href="#" class="btn-secondary" target="_blank" rel="noopener noreferrer">View Project</a>
+        </article>
+        <article class="project-card" tabindex="0">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/babe2b88-80de-4df6-a7f0-46b0334b1639.png" alt="Screenshot of Project 3 e-commerce website" />
+          <h3>Project Three</h3>
+          <p>An e-commerce platform optimized for mobile usability and fast checkout.</p>
+          <a href="#" class="btn-secondary" target="_blank" rel="noopener noreferrer">View Project</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" tabindex="0">
+    <div class="container">
+      <h2>My Blogs on Bharath's Infrastructure Development</h2>
+      <p>Here, I share my insights and detailed blogs covering the evolution and advancements in Bharath's infrastructure.</p>
+
+      <div id="blog-list" class="blog-list" aria-live="polite" aria-label="List of blog posts"></div>
+    </div>
+  </section>
+
+  <section id="upcoming-projects" tabindex="0">
+    <div class="container">
+      <h2>Upcoming Projects</h2>
+      <p>As a dedicated engineering student from [Your College Name],
+         I am developing impactful projects aimed at improving urban infrastructure,
+         specifically for the underprivileged communities of Bharath's urban areas.</p>
+      <ul>
+        <li>Affordable smart housing solutions</li>
+        <li>Sustainable water supply and sanitation systems</li>
+        <li>Community-driven urban planning apps</li>
+        <li>Renewable energy infrastructure for poor neighborhoods</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" tabindex="0">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>You want to work together? Reach out to me through the form below or send an email directly.</p>
+      <form id="contact-form" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" aria-required="true" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com" aria-required="true" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Your message" aria-required="true"></textarea>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+        <div id="form-message" role="alert" aria-live="polite" class="form-message"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container flex-center">
+      <p>© 2024 Your Name. Designed with brilliant UI/UX & animations.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
+
